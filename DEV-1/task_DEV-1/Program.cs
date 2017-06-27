@@ -7,7 +7,8 @@ namespace PrintNumbers
         static void Main(string[] args)
         {
             String output;
-            for (int i = 0; i <= 100; i++)
+            int i = 0;
+            while ( i <= 100 )
             {
                 if (i % 3 == 0)
                 {
@@ -18,6 +19,7 @@ namespace PrintNumbers
                     output = i.ToString();
                 }
                 Console.WriteLine(output);
+             i++;
             }
             Console.ReadKey();
         }
